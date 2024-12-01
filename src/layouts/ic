@@ -1,0 +1,73 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { links } from './path/to/your/links'; // Update the import path
+
+const Navbar = () => {
+  const [openDropdown, setOpenDropdown] = useState(null);
+
+  const toggleDropdown = (index) => {
+    setOpenDropdown(openDropdown === index ? null : index);
+  };
+
+  return (
+    <nav>
+      <ul className="flex flex-col md:flex-row">
+        {links.map((item, index) => (
+          <li key={item.name} className="relative">
+            <Link
+              to={item.link}
+              className={`block capitalize text-black text-[16px] px-4 lg:px-6 py-4 md:py-8 md:mr-0.25 md:text-[16px] md:font-semibold`}
+              onClick={item.dropdown ? () => toggleDropdown(index) : undefined} // Toggle dropdown on click
+            >
+              {item.name}
+              {item.Icon && <item.Icon className="inline ml-1" />} {/* Render the icon */}
+            </Link>
+            {item.dropdown && openDropdown === index && (
+              <ul className="absolute left-0 mt-2 w-full bg-white border rounded shadow-lg">
+                {item.dropdown.map((subItem) => (
+                  <li key={subItem.name}>
+                    <Link
+                      to={subItem.link}
+                      className="block text-black px-4 py-2 hover:bg-gray-200"
+                    >
+                      {subItem.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;
+
+
+import { IoIosArrowDown } from "react-icons/io";
+
+export const links = [
+  { name: "Blog", link: "/" },
+  { 
+    name: "Who We Are", 
+    link: "/", 
+    Icon: IoIosArrowDown,
+    dropdown: [
+      { name: "Our Team", link: "/team" },
+      { name: "Our Story", link: "/story" },
+    ]
+  },
+  { 
+    name: "What We Do", 
+    link: "/", 
+    Icon: IoIosArrowDown,
+    dropdown: [
+      { name: "Services", link: "/services" },
+      { name: "Projects", link: "/projects" },
+    ]
+  },
+  { name: "Resources", link: "/", Icon: IoIosArrowDown },
+  { name: "Contact Us", link: "/" },
+];
