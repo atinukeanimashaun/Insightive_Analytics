@@ -45,6 +45,7 @@ const Contact = () => {
                 name="email"
                 id="email"
                 className="rounded-lg outline-none border border-gray-300 p-2"
+                autoComplete="off"
               />
             </div>
 

@@ -56,7 +56,7 @@ const Insights = () => {
 
       <div ref={productGridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-start mt-5">
         {currentItems.map(item => (
-          <div key={item.id} className="flex flex-col gap-6"
+          <div key={item._id} className="flex flex-col gap-6"
             onClick={() => handleItemsClick(item._id)}>
             <img
               src={item.image}

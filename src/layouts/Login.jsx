@@ -63,6 +63,7 @@ const Login = () => {
             id="email"
             label="Email*"
             type="email"
+            autoComplete="off"
             placeholder="name@example.com"
             formik={formik}
           />
@@ -124,7 +125,7 @@ const Login = () => {
   );
 };
 
-const InputField = ({ id, label, type = "text", placeholder, formik }) => (
+const InputField = ({ id, label, type = "text", placeholder, autoComplete, formik }) => (
   <div className="mb-4">
     <label htmlFor={id} className="font-[600] text-[16px] text-[#0A083A]">
       {label}
@@ -134,6 +135,7 @@ const InputField = ({ id, label, type = "text", placeholder, formik }) => (
       name={id}
       type={type}
       placeholder={placeholder}
+      autoComplete={autoComplete}
       className={`mt-1.5 w-full border ${
         formik.touched[id] && formik.errors[id] ? "border-red-500" : "border-gray-300"
       } rounded-md shadow-sm`}

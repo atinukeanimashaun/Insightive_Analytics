@@ -75,8 +75,8 @@ const Signin = () => {
         <form onSubmit={formik.handleSubmit}>
           <InputField id="firstName" label="First Name*" placeholder="First name" formik={formik} />
           <InputField id="lastName" label="Last Name*" placeholder="Last name" formik={formik} />
-          <InputField id="username" label="Username*" placeholder="Username" formik={formik} />
-          <InputField id="email" label="Email*" placeholder="Email" type="email" formik={formik} />
+          <InputField id="username" label="Username*" placeholder="Username" autoComplete="off" formik={formik} />
+          <InputField id="email" label="Email*" placeholder="Email" type="email" autoComplete="off" formik={formik} />
           <InputField id="password" label="Password*" placeholder="********" type="password" formik={formik} />
           <InputField id="confirmPassword" label="Confirm Password*" placeholder="********" type="password" formik={formik} />
 
@@ -129,7 +129,7 @@ const Signin = () => {
   );
 };
 
-const InputField = ({ id, label, type = "text", placeholder, formik }) => (
+const InputField = ({ id, label, type = "text", placeholder, autoComplete, formik }) => (
   <div className="mb-4">
     <label htmlFor={id} className="text-[16px] font-[600] text-[#0A083A]">
       {label}
@@ -138,6 +138,7 @@ const InputField = ({ id, label, type = "text", placeholder, formik }) => (
       id={id}
       name={id}
       type={type}
+      autoComplete={autoComplete}
       placeholder={placeholder}
       className={`mt-1 block w-full border ${
         formik.touched[id] && formik.errors[id] ? "border-red-500" : "border-gray-300"

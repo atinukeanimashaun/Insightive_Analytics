@@ -6,13 +6,13 @@ import { links } from "../constants";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const { currentUser, doSignOut } = useContext(AuthContext); // Access user and logout function
+  const { currentUser } = useContext(AuthContext); // Access user and logout function
 
   const toggleMenu = () => {
     setNav(!nav);
   };
 
-  const avatarUrl = currentUser?.photoURL || "https://via.placeholder.com/150"; 
+  const avatarUrl = currentUser?.photoURL || "https://via.placeholder.com/150";
 
   return (
     <header className="fixed top-0 left-0 right-0 transition-all duration-300 ease-in-out text-brown1 cursor-pointer z-[1000]">
@@ -84,9 +84,8 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         <nav
-          className={`${
-            nav ? "fixed" : "hidden"
-          } top-0 left-0 w-full h-screen bg-primary flex flex-col items-center justify-start`}
+          className={`${nav ? "fixed" : "hidden"
+            } top-0 left-0 w-full h-screen bg-primary flex flex-col items-center justify-start`}
         >
           <div className="flex items-center justify-between w-full p-5">
             <Link
@@ -112,30 +111,30 @@ const Navbar = () => {
             ))}
 
             <div className="flex items-center justify-center gap-3 pl-8 py-4">
-            {currentUser ? (
-            <Link to="/update-Profile">
-              <img
-                src={avatarUrl}
-                alt="User Avatar"
-                className="w-8 h-8 rounded-full border border-gray-300 cursor-pointer"
-              />
-            </Link>
-          ) : (
-            <>
-              <Link
-                to="/login"
-                className="border border-secondary rounded-lg text-[16px] px-[20px] py-2 text-secondary cursor-pointer hover:bg-secondary hover:text-primary hover:-translate-y-2 duration-300 transition-all"
-              >
-                Login
-              </Link>
-              <Link
-                to="/signin"
-                className="bg-secondary text-primary text-[16px] px-[20px] py-2 cursor-pointer hover:border hover:border-secondary hover:text-secondary hover:bg-transparent hover:-translate-y-2 duration-300 transition-all rounded-lg"
-              >
-                Register
-              </Link>
-            </>
-          )}
+              {currentUser ? (
+                <Link to="/update-Profile">
+                  <img
+                    src={avatarUrl}
+                    alt="User Avatar"
+                    className="w-8 h-8 rounded-full border border-gray-300 cursor-pointer"
+                  />
+                </Link>
+              ) : (
+                <>
+                  <Link
+                    to="/login"
+                    className="border border-secondary rounded-lg text-[16px] px-[20px] py-2 text-secondary cursor-pointer hover:bg-secondary hover:text-primary hover:-translate-y-2 duration-300 transition-all"
+                  >
+                    Login
+                  </Link>
+                  <Link
+                    to="/signin"
+                    className="bg-secondary text-primary text-[16px] px-[20px] py-2 cursor-pointer hover:border hover:border-secondary hover:text-secondary hover:bg-transparent hover:-translate-y-2 duration-300 transition-all rounded-lg"
+                  >
+                    Register
+                  </Link>
+                </>
+              )}
             </div>
           </div>
         </nav>

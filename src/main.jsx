@@ -1,7 +1,7 @@
 import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider, } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from './pages/Home';
 import { AboutUs } from './pages/AboutUs';
 import WhoWeAres from './pages/WhoWeAres';
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
     element: <BlogDetails />,
   },
   {
-    path: "/profile-details/:id", 
+    path: "/profile-details/:id",
     element: <ProfileDetails />,
   },
   {
@@ -113,12 +113,23 @@ const router = createBrowserRouter([
   },
   {
     path: "/update-Profile",
-    element: <Profile />
+    element: <Profile />,
   },
 ]);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AuthProvider>
-      <RouterProvider router={router} />
-  </AuthProvider>,
+    <RouterProvider
+      router={router}
+      future={{
+        v7_fetcherPersist: true, // Fetcher persistence behavior
+        v7_startTransition: true, // State updates wrapped in startTransition
+        v7_relativeSplatPath: true, // Changes in relative splat paths
+        v7_normalizeFormMethod: true, // Normalize formMethod fields to uppercase
+        v7_partialHydration: true, // Changes in hydration behavior
+        v7_skipActionErrorRevalidation: true, // Skip revalidation for 4xx/5xx action responses
+      }}
+    />
+  </AuthProvider>
 );

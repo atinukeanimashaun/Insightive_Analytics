@@ -23,11 +23,11 @@ import { LiaDiscourse } from "react-icons/lia";
 import LoadingIcon from '../assets/images/icon/LoadingIcon'
 
 export const links = [
-  { _id: "1", name: "Blog", link: "/blog" },
-  { _id: "2", name: "Who We Are", link: "/whoWeAre", },
-  { _id: "3", name: "What We Do", link: "/whatWeDo", },
-  { _id: "4", name: "Courses", link: "/course", },
-  { _id: "5", name: "Contact Us", link: "/contactus" },
+  { id: "1", name: "Blog", link: "/blog" },
+  { id: "2", name: "Who We Are", link: "/whoWeAre", },
+  { id: "3", name: "What We Do", link: "/whatWeDo", },
+  { id: "4", name: "Courses", link: "/course", },
+  { id: "5", name: "Contact Us", link: "/contactus" },
 ];
 
 export const companyLinks = [

@@ -18,6 +18,7 @@ const Subscribe = () => {
             type="email" 
             name="email" 
             id="email" 
+            autoComplete="off"
             placeholder="Enter your email" 
             className="w-[55%] md:w-[65%]"
             />

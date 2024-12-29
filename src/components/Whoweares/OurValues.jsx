@@ -23,7 +23,7 @@ const OurValues = () => {
         <div className="lg:w-1/2 grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none md:grid-cols-2 xl:gap-y-16">
           {
           values.map((value) => (
-            <div key={value.id} className="flex flex-col gap-3">
+            <div key={value._id} className="flex flex-col gap-3">
               <p className="bg-secondary text-white text-center w-[35px] h-[35px] rounded-full pt-[5px]">
                 {value.value}
               </p>

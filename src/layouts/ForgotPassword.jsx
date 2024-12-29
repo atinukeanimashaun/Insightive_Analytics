@@ -72,6 +72,7 @@ const ForgotPassword = () => {
               id="email"
               name="email"
               type="email"
+              autoComplete="off"
               placeholder="email & username"
               className={`mt-1 block w-full border ${
                 formik.errors.email && formik.touched.email

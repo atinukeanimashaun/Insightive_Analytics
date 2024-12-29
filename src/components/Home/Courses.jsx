@@ -23,7 +23,7 @@ const Courses = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
         {courses.slice(0, 3).map((item) => (
-          <div key={item.id}
+          <div key={item._id}
             onClick={() => handleItems(item._id)}
             className="flex flex-col border-[1px] border-[#DBDBDB] rounded-xl">
             <div className=" p-5 space-y-4">

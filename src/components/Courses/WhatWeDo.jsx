@@ -17,7 +17,7 @@ const WhatWeDo = () => {
       <div className="lg:w-1/2 grid max-w-xl mx-auto grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none md:grid-cols-2 xl:gap-y-16 mt-10 md:mt-20">
         {
           learns.map((item) => (
-            <div className="flex flex-col gap-5 items-center text-center">
+            <div key={item._id} className="flex flex-col gap-5 items-center text-center">
               <p className="bg-[#175CFF] p-5">
               {item.Icon && <item.Icon className="w-6 h-6 text-[#C7E8EF]"/>}
               </p>

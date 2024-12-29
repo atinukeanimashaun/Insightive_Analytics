@@ -23,7 +23,7 @@ const Insights = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-10">
         {blogs.slice(0, 4).map((item) => (
-          <div key={item.id} className="flex flex-col md:flex-row gap-6 border-[1px] border-[#DBDBDB] rounded-xl p-5"
+          <div key={item._id} className="flex flex-col md:flex-row gap-6 border-[1px] border-[#DBDBDB] rounded-xl p-5"
           onClick={() => handleItemsClick(item._id)}>
             <img
               src={item.image}

@@ -16,7 +16,7 @@ const Services = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 my-10 lg:px-10">
         {services.map((item) => (
-          <div key={item.id} className="flex flex-col gap-3 md:gap-5 p-3">
+          <div key={item._id} className="flex flex-col gap-3 md:gap-5 p-3">
             <img src={item.image} alt="item.image" />
 
             <h2 className="font-[700] text-[30px] lg:text-[49.61px] text-black">
