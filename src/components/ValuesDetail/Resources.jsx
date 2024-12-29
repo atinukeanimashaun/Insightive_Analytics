@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { resources } from '../../constants'
-import FileIcon from '../../assets/images/icon/FileIcon'
-import DownloadIcon from '../../assets/images/icon/DownloadIcon'
+import FileIcon from '../../assets/icon/FileIcon'
+import DownloadIcon from '../../assets/icon/DownloadIcon'
 
 const Resources = () => {
   const [size, setSize] = useState(32); // Default to small size

@@ -1,8 +1,8 @@
 import React from 'react'
-import Link from '../../assets/images/icon/Link'
-import LinkedIn from '../../assets/images/icon/LinkedIn'
-import Instagram from '../../assets/images/icon/Instagram'
-import Facebook from '../../assets/images/icon/Facebook'
+import Link from '../../assets/icon/LinkIcon'
+import LinkedIn from '../../assets/icon/LinkedInIcon'
+import Instagram from '../../assets/icon/InstagramIcon'
+import Facebook from '../../assets/icon/FacebookIcon'
 import { useNavigate } from 'react-router-dom'
 
 const DetailsProfile = ({ items }) => {

@@ -1,8 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
-import LevelIcon from '../../assets/images/icon/LevelIcon';
-import VideosIcon from '../../assets/images/icon/VideosIcon';
-import LengthIcon from '../../assets/images/icon/LengthIcon';
-import LoadingIcon from '../../assets/images/icon/LoadingIcon';
+import LevelIcon from '../../assets/icon/LevelIcon';
+import LengthIcon from '../../assets/icon/LengthIcon';
+import LoadingIcon from '../../assets/icon/LoadingIcon';
 import { BsChevronDown } from 'react-icons/bs';
 import { AuthContext } from '../../contexts/AuthProvider';
 

@@ -20,7 +20,7 @@ import imageCourse2 from '../assets/images/image-2.png'
 import imageCourse3 from '../assets/images/image-3.png'
 import { MdInsights, MdOutlinePerson3, MdSettings } from "react-icons/md";
 import { LiaDiscourse } from "react-icons/lia";
-import LoadingIcon from '../assets/images/icon/LoadingIcon'
+import LoadingIcon from '../assets/icon/LoadingIcon'
 
 export const links = [
   { id: "1", name: "Blog", link: "/blog" },

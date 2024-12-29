@@ -1,8 +1,8 @@
 import React from 'react';
 import image20 from '../../assets/images/image20.png';
-import LevelIcon from '../../assets/images/icon/LevelIcon';
-import VideosIcon from '../../assets/images/icon/VideosIcon';
-import LengthIcon from '../../assets/images/icon/LengthIcon';
+import LevelIcon from '../../assets/icon/LevelIcon';
+import VideosIcon from '../../assets/icon/VideosIcon';
+import LengthIcon from '../../assets/icon/LengthIcon';
 
 // Reusable InfoCard Component
 const InfoCard = ({ icon: Icon, label, value }) => (

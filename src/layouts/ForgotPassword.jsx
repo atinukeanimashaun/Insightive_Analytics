@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import PasswordIcon from "../assets/images/icon/PasswordIcon";
+import PasswordIcon from "../assets/icon/PasswordIcon";
 import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../contexts/AuthProvider";
 
