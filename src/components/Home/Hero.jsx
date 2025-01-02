@@ -1,12 +1,12 @@
 import React from 'react'
-import image2 from '../../assets/images/image2.png'
+import Image2 from '../../assets/images/Image2.png'
 import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
     <div className="relative overflow-hidden">
       <div className="relative">
-        <img src={image2} alt="image2" className="w-full h-full object-cover" />
+        <img src={Image2} alt="image2" className="w-full h-full object-cover" />
       </div>
 
       <div className="w-full h-full absolute top-0 left-0 bg-black/10" />

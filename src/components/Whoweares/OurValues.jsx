@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutImage4 from '../../assets/images/aboutImage4.png'
+import AboutImage4 from '../../assets/images/AboutImage4.png'
 import { values } from '../../constants'
 
 const OurValues = () => {
@@ -17,7 +17,7 @@ const OurValues = () => {
 
       <div className="flex flex-col lg:flex-row items-center gap-5 mt-10 md:mt-24">
         <div className="lg:w-1/2">
-        <img src={aboutImage4} alt="" />
+        <img src={AboutImage4} alt="" />
         </div>
 
         <div className="lg:w-1/2 grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none md:grid-cols-2 xl:gap-y-16">

@@ -1,6 +1,5 @@
 import React from 'react'
-import image7 from '../../assets/images/image7.png'
-import aboutImage1 from '../../assets/images/aboutImage1.png'
+import AboutImage1 from '../../assets/images/AboutImage1.png'
 
 const About = () => {
   return (
@@ -16,12 +15,8 @@ const About = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row items-center gap-5 mt-10 md:mt-24">
-        <div className="lg:w-1/2 relative">
-          <img src={aboutImage1} alt="aboutImage" className="relative z-10" />
-
-          <div className="hidden xl:block absolute -bottom-16 -right-14 z-0 pt-2">
-            <img src={image7} alt="image7" />
-          </div>
+        <div className="lg:w-1/2">
+          <img src={AboutImage1} alt="aboutImage" />
         </div>
 
         <div className="lg:w-1/2 text-center lg:text-left">

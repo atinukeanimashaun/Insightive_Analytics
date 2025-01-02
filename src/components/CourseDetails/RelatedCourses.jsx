@@ -26,10 +26,10 @@ const RelatedCourses = () => {
       .filter((item) => ["16", "4", "6"].includes(item._id))
       .map((item) => (
         <div key={item.id} className="flex flex-col border-[1px] border-[#DBDBDB] rounded-xl">
-        <div className=" p-3 space-y-4" 
+        <div className=" p-5 space-y-4" 
         onClick={() => handleItems(item._id)}>
           <img src={item.image} alt="item.image" 
-          className=" w-[400px] h-[200px] rounded-xl object-cover" 
+          className=" w-[520px] h-[300px] rounded-xl object-cover" 
           />
 
           <button className="py-1 px-3 bg-grey text-black text-[16px] font-[500] rounded-2xl capitalize">

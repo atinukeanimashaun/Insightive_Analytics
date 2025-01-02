@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import { blogs } from '../../constants';
 import { BsChevronRight } from 'react-icons/bs';
-import image19 from '../../assets/images/image19.png'
+import Image19 from '../../assets/images/Image19.png'
 
 const Details = () => {
   const { id } = useParams();
@@ -70,7 +70,7 @@ const Details = () => {
           </p>
 
           <figure>
-            <img src={image19} alt="image19" className="rounded-xl" />
+            <img src={Image19} alt="image19" className="rounded-xl" />
             <figcaption className="border-l-2 border-l-red pl-4 text-[14px] text-[#4F4F4F mt-3">
               Image caption goes here
             </figcaption>

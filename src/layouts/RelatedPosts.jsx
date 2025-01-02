@@ -25,7 +25,7 @@ const RelatedPosts = () => {
       {blogs
       .filter((item) => ["6", "7", "8"].includes(item._id))
       .map((item) => (
-          <div key={item.id} className="flex flex-col gap-6 border-[1px] border-[#DBDBDB] rounded-xl p-5"
+          <div key={item._id} className="flex flex-col gap-6 border-[1px] border-[#DBDBDB] rounded-xl p-5"
           onClick={() => handleItemsClick(item._id)}>
             <img
               src={item.image}

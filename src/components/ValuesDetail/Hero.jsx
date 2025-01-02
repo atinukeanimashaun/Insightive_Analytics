@@ -1,5 +1,5 @@
 import React from 'react';
-import image20 from '../../assets/images/image20.png';
+import Image20 from '../../assets/images/Image20.png';
 import LevelIcon from '../../assets/icon/LevelIcon';
 import VideosIcon from '../../assets/icon/VideosIcon';
 import LengthIcon from '../../assets/icon/LengthIcon';
@@ -22,7 +22,7 @@ const Hero = ({ id }) => {
     <div className="py-8 md:pt-14 px-6 xl:px-20">
       <div className="flex flex-col items-center justify-center gap-4">
         {/* Image Section */}
-        <img src={image20} alt="Course Thumbnail" />
+        <img src={Image20} alt="Course Thumbnail" />
 
         {/* Title and Description Section */}
         <div className="flex flex-col items-center text-center gap-4">

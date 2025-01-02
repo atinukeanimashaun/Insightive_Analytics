@@ -1,6 +1,6 @@
 import React from 'react'
-import image7 from '../../assets/images/image7.png'
-import aboutImage3 from '../../assets/images/aboutImage3.png'
+import Image7 from '../../assets/images/Image7.png'
+import AboutImage3 from '../../assets/images/AboutImage3.png'
 
 const AboutUs = () => {
   return (
@@ -17,10 +17,10 @@ const AboutUs = () => {
 
       <div className="flex flex-col lg:flex-row items-center gap-5 mt-10 md:mt-24">
         <div className="lg:w-1/2 relative">
-          <img src={aboutImage3} alt="aboutImage" className="relative z-10" />
+          <img src={AboutImage3} alt="aboutImage" className="relative z-10" />
 
           <div className="hidden xl:block absolute -bottom-16 -right-6 z-0 pt-2">
-            <img src={image7} alt="image7" />
+            <img src={Image7} alt="image7" />
           </div>
         </div>
 

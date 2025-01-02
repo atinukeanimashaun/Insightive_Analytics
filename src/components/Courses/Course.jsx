@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { Link, useNavigate, useSearchParams } from 'react-router-dom'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import FilterPanel from './FilterPanel'
 import { courses } from '../../constants';
 
@@ -74,10 +74,10 @@ const Course = () => {
         <div ref={productGridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-start mt-5">
           {currentItems.map(item => (
             <div key={item._id} className="flex flex-col border-[1px] border-[#DBDBDB] rounded-xl">
-              <div className=" p-3 space-y-4"
+              <div className=" p-5 space-y-4"
                 onClick={() => handleItems(item._id)}>
                 <img src={item.image} alt="item.image"
-                  className=" w-[400px] h-[200px] rounded-xl object-cover"
+                  className=" w-[520px] h-[300px] rounded-xl object-cover"
                 />
 
                 <button className="py-1 px-3 bg-grey text-black text-[16px] font-[500] rounded-2xl capitalize">

@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutImage4 from '../../assets/images/aboutImage4.png'
+import AboutImage4 from '../../assets/images/AboutImage4.png'
 import { FaPlayCircle } from 'react-icons/fa'
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from 'react-icons/io';
 import { Link, useNavigate } from 'react-router-dom';
@@ -24,7 +24,7 @@ const RForTip = () => {
 
         <div className="relative cursor-pointer mt-10"
           onClick={handleVideoClick}>
-          <img src={aboutImage4} alt="Video Thumbnail" className="w-full h-[550px] rounded-lg" />
+          <img src={AboutImage4} alt="Video Thumbnail" className="w-full h-[550px] rounded-lg" />
           <FaPlayCircle className="absolute inset-0 m-auto text-white text-6xl opacity-75" />
         </div>
 

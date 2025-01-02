@@ -1,18 +1,17 @@
 import React from 'react'
-import image7 from '../assets/images/image7.png'
-import image15 from '../assets/images/image15.png'
+import Image15 from '../assets/images/Image15.png'
 
 const Contact = () => {
   return (
-    <div className="py-8 md:py-14 px-6 xl:px-20">
+    <div className="py-8 md:py-14 px-6 xl:px-[10rem]">
       <div className="text-center">
         <h2 className="text-[28px] md:text-[36px] lg:text-[56px] font-[700] text-black pb-2">
           Get in touch
         </h2>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-5 mt-10 md:mt-24">
-        <div className="lg:w-1/2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-20 mt-10 md:mt-24">
+        <div className="">
           <form>
             <div>
               <h2 className="text-[20px] md:text-[36px] xl:text-[48px] text-secondary font-[700]">
@@ -71,12 +70,8 @@ const Contact = () => {
           </form>
         </div>
 
-        <div className="lg:w-1/2 relative">
-          <img src={image15} alt="image15" className="relative z-10" />
-
-          <div className="hidden xl:block absolute -bottom-16 -right-6 z-0 pt-2">
-            <img src={image7} alt="image7" />
-          </div>
+        <div className="w-full">
+          <img src={Image15} alt="image15" />
         </div>
       </div>
     </div>

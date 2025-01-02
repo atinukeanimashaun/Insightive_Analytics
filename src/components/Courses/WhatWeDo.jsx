@@ -19,7 +19,7 @@ const WhatWeDo = () => {
           learns.map((item) => (
             <div key={item._id} className="flex flex-col gap-5 items-center text-center">
               <p className="bg-[#175CFF] p-5">
-              {item.Icon && <item.Icon className="w-6 h-6 text-[#C7E8EF]"/>}
+              {item.Icon && <item.Icon className="w-8 h-8 text-[#C7E8EF]"/>}
               </p>
 
               <p className="text-[#0A083A] font-[700] text-[18px] md:text-[24px]">

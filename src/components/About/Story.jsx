@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutImage2 from '../../assets/images/aboutImage2.png'
+import AboutImage2 from '../../assets/images/AboutImage2.png'
 
 const Story = () => {
   return (
@@ -43,7 +43,7 @@ const Story = () => {
         </div>
 
         <div className="lg:w-1/2">
-          <img src={aboutImage2} alt="aboutImage2" />
+          <img src={AboutImage2} alt="aboutImage2" />
         </div>
       </div>
     </div>

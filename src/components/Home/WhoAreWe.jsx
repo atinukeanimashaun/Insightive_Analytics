@@ -1,16 +1,16 @@
 import React from 'react'
-import image1 from '../../assets/images/image1.png'
-import image7 from '../../assets/images/image7.png'
+import Image1 from '../../assets/images/Image1.png'
+import Image7 from '../../assets/images/Image7.png'
 
 const WhoAreWe = () => {
   return (
       <div className="pt-24 pb-14 px-6 xl:px-28 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8 bg-primary">
         <div className="md:w-1/2 relative">
           <div className="hidden xl:block absolute -top-16 -left-14 z-0 pt-2">
-            <img src={image7} alt="image7" />
+            <img src={Image7} alt="image7" />
           </div>
 
-          <img src={image1} alt="image1" className="relative z-10" />
+          <img src={Image1} alt="image1" className="relative z-10" />
         </div>
 
         <div className="space-y-1 md:w-1/2">
