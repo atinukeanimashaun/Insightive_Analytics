@@ -3,7 +3,7 @@ import AboutImage1 from '../../assets/images/AboutImage1.png'
 
 const About = () => {
   return (
-    <div className="py-8 md:py-14 px-6 xl:px-20">
+    <div className="py-8 md:py-14 px-6 xl:px-[10rem]">
       <div className="text-center">
         <h2 className="text-[28px] md:text-[36px] lg:text-[56px] font-[700] text-black pb-2 capitalize">
           about us

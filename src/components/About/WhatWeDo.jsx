@@ -5,7 +5,7 @@ export const WhatWeDo = () => {
   const colors = ["bg-[#1E298D]", "bg-[#16AF8E]", "bg-[#922C40]"];
 
   return (
-    <div className="pt-24 pb-14 px-6 xl:px-28">
+    <div className="pt-24 pb-14 px-6 xl:px-[10rem]">
       <div className="text-center">
         <h2 className="text-[28px] md:text-[36px] lg:text-[56px] font-[700] text-black pb-2">
           What we do

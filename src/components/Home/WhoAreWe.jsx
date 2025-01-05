@@ -4,7 +4,7 @@ import Image7 from '../../assets/images/Image7.png'
 
 const WhoAreWe = () => {
   return (
-      <div className="pt-24 pb-14 px-6 xl:px-28 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8 bg-primary">
+      <div className="pt-24 pb-14 px-6 xl:px-[10rem] flex flex-col md:flex-row justify-between items-center gap-4 md:gap-10 bg-primary">
         <div className="md:w-1/2 relative">
           <div className="hidden xl:block absolute -top-16 -left-14 z-0 pt-2">
             <img src={Image7} alt="image7" />

@@ -73,7 +73,7 @@ const Course = () => {
 
         <div ref={productGridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-start mt-5">
           {currentItems.map(item => (
-            <div key={item._id} className="flex flex-col border-[1px] border-[#DBDBDB] rounded-xl">
+            <div key={item._id} className="flex flex-col ite border-[1px] border-[#DBDBDB] rounded-xl">
               <div className=" p-5 space-y-4"
                 onClick={() => handleItems(item._id)}>
                 <img src={item.image} alt="item.image"

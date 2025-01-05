@@ -10,7 +10,7 @@ const Courses = () => {
   };
 
   return (
-    <div className="py-8 md:py-14 px-6 xl:px-20">
+    <div className="py-8 md:py-14 px-6 xl:px-[10rem]">
       <div className="text-center">
         <h2 className="text-[28px] md:text-[36px] font-[600] text-black pb-2">
           Courses
